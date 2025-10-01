@@ -7,7 +7,7 @@
 
 This project is a miniature robotics platform designed to demonstrate the core capabilities of autonomous vehicles in a low-cost, portable form. Built on a Raspberry Pi with LiDAR, ultrasonic sensors, and camera vision, it integrates mapping, planning, perception, and control into a full-stack robotics system.
 
-**Capabilities:**
+# **Capabilities:**
 
 _Mapping & Localization:_ 
     - Builds a real-time occupancy grid from LiDAR scans (Bresenham raytracing). 
@@ -31,14 +31,14 @@ _User Interface & Operations:_
     - Remote control interface with E-stop and motor toggling.
     - Debug-friendly live telemetry for testing and demonstrations.
 
-**Real-world impact:**
+# **Real-world impact:**
 This project simulates the fundamentals of autonomous robotics used in:
 
-# 1) Self-driving cars (LiDAR mapping, path planning, sensor fusion).
+1) Self-driving cars (LiDAR mapping, path planning, sensor fusion).
 
-# 2) Mobile exploration robots (frontier exploration for search & rescue, warehouse mapping).
+2) Mobile exploration robots (frontier exploration for search & rescue, warehouse mapping).
 
-# 3) Human-robot interaction research (safety features, live observability).
+3) Human-robot interaction research (safety features, live observability).
 
 It provides a hands-on robotics testbed for experimenting with AI navigation, perception, and multi-sensor integration. The platform can be extended with reinforcement learning, SLAM algorithms, or additional sensors, making it suitable for research prototyping.
 
