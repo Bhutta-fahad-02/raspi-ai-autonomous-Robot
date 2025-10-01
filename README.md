@@ -9,29 +9,29 @@ This project is a miniature robotics platform designed to demonstrate the core c
 
 # **Capabilities:**
 
-_Mapping & Localization:_ 
+_Mapping & Localization:_ <br>
     - Builds a real-time occupancy grid from LiDAR scans (Bresenham raytracing).<br>
     - Maintains robot pose with dead-reckoning motion model.<br>
     
-_Autonomous Exploration:_ 
+_Autonomous Exploration:_ <br>
     - Detects frontiers (boundaries between explored and unknown space).<br>
     - Plans efficient routes using A* pathfinding to systematically explore unknown environments. <br> 
 
-_Perception & Target Tracking:_
+_Perception & Target Tracking:_<br>
     - Computer vision with HSV + Hough transforms for colored target detection.  
     - Camera-based distance estimation (pinhole model) fused with ultrasonic sonar for robust measurements.  
 
-_-Navigation & Control:_
+_-Navigation & Control:_<br>
     - Differential drive with four DC motors (L298N drivers, PWM control).  
     - Built-in safety features: E-stop, soft-start PWM limits, and motor toggle via UI.  
     - Escape behavior using ultrasonic sensors & LIDAR when trapped in confined spaces.  
 
-_User Interface & Operations:_
+_User Interface & Operations:_<br>
     - Flask-based MJPEG streaming server with live video, state overlays, and occupancy map visualization.  
     - Remote control interface with E-stop and motor toggling.  
     - Debug-friendly live telemetry for testing and demonstrations.  
 
-# **Real-world impact:**
+# **Real-world impact:**<br>
 This project simulates the fundamentals of autonomous robotics used in:  
 
 1) Self-driving cars (LiDAR mapping, path planning, sensor fusion).  
