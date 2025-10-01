@@ -1,6 +1,10 @@
 # raspi-ai-autonomous-Robot
 
 
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/3561ecc6-c926-4749-816a-0e860d984c10" />
+
+
+
 This project is a miniature robotics platform designed to demonstrate the core capabilities of autonomous vehicles in a low-cost, portable form. Built on a Raspberry Pi with LiDAR, ultrasonic sensors, and camera vision, it integrates mapping, planning, perception, and control into a full-stack robotics system.
 
 **Capabilities:**
@@ -41,9 +45,6 @@ It provides a hands-on robotics testbed for experimenting with AI navigation, pe
 
 
 Autonomous Truck: 
-
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/3561ecc6-c926-4749-816a-0e860d984c10" />
-
 
 <img width="802" height="1078" alt="image" src="https://github.com/user-attachments/assets/effe32e3-a077-429d-ab43-233c7f4f7907" />
 
