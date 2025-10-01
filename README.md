@@ -10,12 +10,12 @@ This project is a miniature robotics platform designed to demonstrate the core c
 # **Capabilities:**
 
 _Mapping & Localization:_ 
-    - Builds a real-time occupancy grid from LiDAR scans (Bresenham raytracing).  
-    - Maintains robot pose with dead-reckoning motion model.  
+    - Builds a real-time occupancy grid from LiDAR scans (Bresenham raytracing).<br>
+    - Maintains robot pose with dead-reckoning motion model.<br>
     
 _Autonomous Exploration:_ 
-    - Detects frontiers (boundaries between explored and unknown space).  
-    - Plans efficient routes using A* pathfinding to systematically explore unknown environments.  
+    - Detects frontiers (boundaries between explored and unknown space).<br>
+    - Plans efficient routes using A* pathfinding to systematically explore unknown environments. <br> 
 
 _Perception & Target Tracking:_
     - Computer vision with HSV + Hough transforms for colored target detection.  
