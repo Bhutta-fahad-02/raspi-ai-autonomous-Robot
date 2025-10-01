@@ -34,17 +34,19 @@ _User Interface & Operations:_
 **Real-world impact:**
 This project simulates the fundamentals of autonomous robotics used in:
 
-1) Self-driving cars (LiDAR mapping, path planning, sensor fusion).
+# 1) Self-driving cars (LiDAR mapping, path planning, sensor fusion).
 
-2) Mobile exploration robots (frontier exploration for search & rescue, warehouse mapping).
+# 2) Mobile exploration robots (frontier exploration for search & rescue, warehouse mapping).
 
-3) Human-robot interaction research (safety features, live observability).
+# 3) Human-robot interaction research (safety features, live observability).
 
-It provides a hands-on robotics testbed for experimenting with AI navigation, perception, and multi-sensor integration. The platform can be extended with reinforcement learning, SLAM algorithms, or additional sensors, making it suitable for both education and research prototyping.
+It provides a hands-on robotics testbed for experimenting with AI navigation, perception, and multi-sensor integration. The platform can be extended with reinforcement learning, SLAM algorithms, or additional sensors, making it suitable for research prototyping.
 
 
+Below are images of the completed build:
 
-**Autonomous Truck: **
+
+# Autonomous Truck: 
 
 <img width="802" height="1078" alt="image" src="https://github.com/user-attachments/assets/effe32e3-a077-429d-ab43-233c7f4f7907" />
 
@@ -57,20 +59,20 @@ It provides a hands-on robotics testbed for experimenting with AI navigation, pe
 
 
 
-**Pi setup: **
+# Pi setup: 
 
 
 <img width="3024" height="4032" alt="image" src="https://github.com/user-attachments/assets/7623abf3-1977-4eac-9292-2400430f89a3" />
 
 
 
-**States Diagram: **
+# States Diagram: 
 
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/9c5e68bd-5c92-4612-803c-e5bddcb611df" />
 
 
-**UI:**
+# UI:
 
 <img width="808" height="760" alt="image" src="https://github.com/user-attachments/assets/ee1179c8-0837-458a-b89c-fac1d04eb35d" />
 
