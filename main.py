@@ -7,7 +7,7 @@ from flask import Flask, Response, redirect, url_for, make_response
 from rplidar import RPLidar
 
 # ========= CONFIG =========
-# LiDAR: auto-detect common ports but let you override below.
+
 DEFAULT_LIDAR_PORT = '/dev/ttyUSB0'
 PORT_CANDIDATES = [
     '/dev/ttyUSB0','/dev/ttyUSB1','/dev/ttyACM0','/dev/ttyACM1',
@@ -23,13 +23,13 @@ ORIGIN      = (W//2, H//2)
 UNKNOWN, FREE, OCC = -1, 0, 1
 NEIGHBORS   = [(1,0),(-1,0),(0,1),(0,-1)]
 
-# Ultrasonic pins (your pins)
+# Ultrasonic pins 
 TRIG1, ECHO1 = 21, 20
 TRIG2, ECHO2 = 4,  26
 ULTRA_THRESHOLD_CM = 20
 STUCK_LIMIT = 5
 
-# Motor pins (your pins: two L298 boards, 4 motors)
+# Motor pins 
 IN1_A1, IN2_A1, ENA_A1 = 24, 23, 25
 IN1_B1, IN2_B1, ENB_B1 = 17, 27, 22
 IN1_A2, IN2_A2, ENA_A2 = 6,  12, 5
