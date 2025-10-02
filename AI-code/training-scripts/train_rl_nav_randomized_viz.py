@@ -124,7 +124,7 @@ if __name__=="__main__":
     model = PPO("MlpPolicy", env, verbose=1, tensorboard_log="./ppo_nav_tb/")
     model.learn(total_timesteps=300_000)
     model.save("ppo_nav.zip")
-    print("✅ Saved PPO policy as ppo_nav.zip")
+    print("Saved PPO policy: ppo_nav.zip")
 
     # Test visualization with 1 env
     test_env = RandomWorldNavEnv(visualize=True)
