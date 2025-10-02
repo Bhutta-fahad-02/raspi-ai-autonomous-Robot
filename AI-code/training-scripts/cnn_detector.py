@@ -6,8 +6,8 @@ from ultralytics import YOLO
 class CNNDetector:
     def __init__(self, weights="models/target.pt", fallback="yolov8n.pt", conf=0.4):
         """
-        weights: path to your custom YOLO weights (trained for your target)
-        fallback: fallback YOLO model if custom weights not found
+        weights: path to  custom YOLO weights
+        fallback: fallback YOLO model
         conf: confidence threshold
         """
         if os.path.exists(weights):
