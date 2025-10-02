@@ -67,18 +67,18 @@ JPEG_QUALITY = 75
 
 # --- AI toggles & model paths ---
 USE_CNN_VISION = True
-YOLO_WEIGHTS = os.environ.get("YOLO_WEIGHTS", "training-scripts/target.pt")  # your custom detector
-YOLO_FALLBACK = "yolov8n.pt"  # small general model if custom is missing
+YOLO_WEIGHTS = os.environ.get("YOLO_WEIGHTS", "training-scripts/target.pt") 
+YOLO_FALLBACK = "yolov8n.pt"  
 
 USE_RL_NAV = True
-RL_POLICY_PATH = os.environ.get("RL_POLICY_PATH", "training-scripts/ppo_nav.zip")  # PPO policy (SB3)
-RL_ACTIONS = ["FWD", "LEFT", "RIGHT", "REV", "STOP"]  # discrete action space
+RL_POLICY_PATH = os.environ.get("RL_POLICY_PATH", "training-scripts/ppo_nav.zip")  
+RL_ACTIONS = ["FWD", "LEFT", "RIGHT", "REV", "STOP"]  
 
 # --- RL observation config ---
-LIDAR_BINS = 36      # number of angular bins to summarize scan
-LIDAR_CLIP = 2.5     # meters, clip max distance
+LIDAR_BINS = 36   
+LIDAR_CLIP = 2.5     
 OBS_INCLUDES_SONAR = True
-OBS_INCLUDES_GOAL  = True  # add (dx, dy, heading_err) to nearest frontier
+OBS_INCLUDES_GOAL  = True 
 
 # ========== Camera wrapper ==========
 class Camera:
@@ -192,14 +192,14 @@ def safe_import_ultralytics(weights_hint=None):
     except Exception as e:
         return None, f"ultralytics not available: {e}"
 
-    # choose weights
+
     weights = None
     if weights_hint and os.path.exists(weights_hint):
         weights = weights_hint
     elif os.path.exists(YOLO_FALLBACK):
         weights = YOLO_FALLBACK
     else:
-        #  ultralytics auto-download if not availible 
+        
         weights = "yolov8n.pt"
 
     try:
@@ -255,14 +255,14 @@ class Robot:
         # LiDAR
         self.lidar = self._open_lidar()
         self.scan_iter = self.lidar.iter_scans()
-        self.last_scan = None  # cached for RL obs
+        self.last_scan = None 
 
         # Camera
         self.cam = Camera(640, 480)
 
         # Map/state
         self.grid = np.full((H, W), UNKNOWN, dtype=np.int8)
-        self.pose = [0.0, 0.0, 0.0]  # x,y,theta
+        self.pose = [0.0, 0.0, 0.0]  
         self.path = []
         self.stuck_counter = 0
         self.state = "Init"
@@ -448,7 +448,7 @@ class Robot:
                 # inference
                 results = self.yolo(frame_bgr, verbose=False)
                 if results and len(results[0].boxes) > 0:
-                    # pick the largest box (or first)
+                    # pick the largest box / first
                     boxes = results[0].boxes
                     areas = []
                     for i in range(len(boxes)):
@@ -460,7 +460,7 @@ class Robot:
                     r = int(0.5*max(x2-x1, y2-y1))
                     return (cx, cy, r)
             except Exception as e:
-                # YOLO fails at runtime, drop to fallback
+                #drop to fallback
                 print("[Vision] YOLO error, fallback to HSV:", e)
                 self.using_cnn_vision = False
 
@@ -567,7 +567,7 @@ class Robot:
             time.sleep(DT)
         return True
 
-    # ----- main loop -----
+    # ----- main -----
     def run(self):
         start_http_server()
         print(f"HTTP stream at http://{STREAM_HOST}:{STREAM_PORT}/ (SSH port-forward if remote)")
