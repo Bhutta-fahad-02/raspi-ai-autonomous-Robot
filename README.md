@@ -66,7 +66,7 @@ Below are images of the completed build:
 
 
 
-# States Diagram: 
+# State Diagram: 
 
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/9c5e68bd-5c92-4612-803c-e5bddcb611df" />
